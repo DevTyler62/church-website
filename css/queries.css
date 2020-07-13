@@ -1,7 +1,8 @@
 @media only screen and (max-width: 1200px) {
+    body { font-size: 18px; }
+
     .center-heading {
         width: 100%;
-        padding: 0 2%;
     }
 
     header {
