@@ -42,11 +42,7 @@
     body { font-size: 14px; }
 
     header {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        height: 100vh;
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
 
     .section-history p {
