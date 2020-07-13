@@ -4,6 +4,11 @@
         padding: 0 2%;
     }
 
+    header {
+        background-attachment: scroll;
+    }
+
+
     .row { padding: 0 2%; }
 
     /* .section-history img {
