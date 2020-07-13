@@ -8,8 +8,12 @@
 
     header {
         background-attachment: scroll;
-    }
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
 
+    }
 
     .row { padding: 0 2%; }
 
@@ -49,7 +53,7 @@
     body { font-size: 14px; }
 
     .center-heading {
-        margin-left: 25px;
+        margin-left: 20px;
     }
 
     header {
