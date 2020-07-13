@@ -41,6 +41,14 @@
 @media only screen and (max-width: 480px) {
     body { font-size: 14px; }
 
+    header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
     .section-history p {
         margin-left: 0;
     }
