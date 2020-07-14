@@ -50,23 +50,39 @@
 }
 
 @media only screen and (max-width: 480px) {
-    body { font-size: 14px; }
+
+    body { font-size: 15px;}
+    h1 { font-size: 180%; }
+    header { background-attachment: scroll; }
+    .section-history p { margin-left: 0; }
+    .service p { margin-bottom: 20px; }
+    .contact-phone-number { text-align: center; }
+    .section-bulletin img { width: 90%; }
 
     .center-heading {
-        margin-left: 20px;
+        text-align: center;
+        margin-left: 0px;
+        max-width: 87%;
     }
 
-    header {
-        background-attachment: scroll;
+    .section-history img {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .section-history p {
-        margin-left: 0;
+    .footer-nav {
+        text-align: center;
+        margin-bottom: 8px;
     }
 
-    .service p {
-        margin-bottom: 20px;
+    .event-list li {
+        padding-bottom: 8px;
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
+    
 }
 
 
