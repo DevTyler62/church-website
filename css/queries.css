@@ -1,9 +1,25 @@
 @media only screen and (max-width: 1200px) {
+    
+    h2 { font-size: 170%;}
     body { font-size: 18px; }
+    .logo { padding-left: 15px; }
+    .row { padding: 0 2%; }
 
     .center-heading {
-        width: 100%;
-        margin-left: 30px;
+        text-align: center;
+        max-width: 87%;
+        margin-left: 0;
+    }
+
+    .main-nav {
+        padding-right: 5px;
+        padding-top: 25px;
+    }
+
+    .event-list li {
+        padding-bottom: 8px;
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
 
     header {
@@ -12,45 +28,93 @@
         background-size: cover;
         background-position: center center;
         height: 100vh;
-
     }
 
-    .row { padding: 0 2%; }
+    .section-history img {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-    /* .section-history img {
-        margin-top: 75px;
-    } */
+    .section-bulletin img { width: 60%; }
 }
 
 @media only screen and (max-width: 1023px) {
     body { font-size: 17px; }
+    h1 { font-size: 170%; }
+    h2 { font-size: 150%; }
+    header { background-attachment: scroll; }
+    .logo { padding-left: 15px; }
+
+    .main-nav {
+        padding-right: 8px;
+        justify-content: space-around;
+    }
+
     .section-history img {
-        margin-top: 50px;
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-history p { padding: 50px 0; }
+
+    .event-list li {
+        padding-bottom: 8px;
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
 
-    .section-history p {
-        padding: 50px 0;
+    .copyright { font-size: 80%; }
+    .contact-phone-number { font-size: 70%; }
+    .section-bulletin img { width: 80%; }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 896px) and (orientation : landscape) {
+
+    .main-nav {
+        padding-right: 5px;
+        padding-top: 50px;
     }
 
-    
+    .main-nav li { font-size: 80%; }
+    .btn { font-size: 80%; }
+    h1 { font-size: 140%; }
+    h2 { font-size: 80%; }
+    h3 { font-size: 90%; }
+    .section-history p { font-size: 80%; }
+    .section-history img { width: 70%; }
+    .section-time-and-events p { font-size: 90%; }
+    .event-list li { font-size: 90%; }
+    .section-bulletin img { width: 70%; }
+    .contact { font-size: 120%; }
+    .section-contact p { font-size: 80%; }
 }
 
 @media only screen and (max-width: 767px) {
+    
     body { font-size: 16px; }
-    h1 { font-size: 180%; }
+    h1 { font-size: 120%; }
     h2 { font-size: 150%;}
+    header { background-attachment: scroll; }
+    .logo { padding-left: 20px; }
+
+    .center-heading {
+        text-align: center;
+        margin-left: 0;
+        max-width: 87%;
+    }
 
     .section-history img {
         margin-bottom: 0;
         margin-top: 10px;
     }
-
-    .main-nav { display: none; }
-
 }
 
 @media only screen and (max-width: 480px) {
 
+    html { overflow-x: hidden; max-width: 100vw; }
     body { font-size: 15px;}
     h1 { font-size: 180%; }
     header { background-attachment: scroll; }
@@ -58,6 +122,88 @@
     .service p { margin-bottom: 20px; }
     .contact-phone-number { text-align: center; }
     .section-bulletin img { width: 90%; }
+    .logo { padding-left: 10px; }
+
+    body.lock-scroll { overflow: hidden; }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    nav { position: relative; }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 3%;
+        padding-top: 50px;
+        z-index: 4;
+    }
+    
+    .main-nav {
+        position: fixed;
+        background-image: linear-gradient(to right, #00d2ff, #3a7bd5);;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(100px at 90% -18%);
+        -webkit-clip-path: circle(100px at 90% -18%);
+        transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .main-nav.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .main-nav li a {
+        font-size: 170%;
+        font-weight: bold;
+    }
+
+    .main-nav li { opacity: 0; }
+
+    .main-nav li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+        -webkit-transition: all 0.5s ease 0.2s;
+        -moz-transition: all 0.5s ease 0.2s;
+        -ms-transition: all 0.5s ease 0.2s;
+        -o-transition: all 0.5s ease 0.2s;
+    }
+    .main-nav li:nth-child(2) {
+        transition: all 0.5s ease 0.2s;
+        -webkit-transition: all 0.5s ease 0.2s;
+        -moz-transition: all 0.5s ease 0.2s;
+        -ms-transition: all 0.5s ease 0.2s;
+        -o-transition: all 0.5s ease 0.2s;
+    }
+    .main-nav li:nth-child(3) {
+        transition: all 0.5s ease 0.2s;
+        -webkit-transition: all 0.5s ease 0.2s;
+        -moz-transition: all 0.5s ease 0.2s;
+        -ms-transition: all 0.5s ease 0.2s;
+        -o-transition: all 0.5s ease 0.2s;
+    }
+    .main-nav li:nth-child(4) {
+        transition: all 0.5s ease 0.2s;
+        -webkit-transition: all 0.5s ease 0.2s;
+        -moz-transition: all 0.5s ease 0.2s;
+        -ms-transition: all 0.5s ease 0.2s;
+        -o-transition: all 0.5s ease 0.2s;
+    }
+
+    li.fade { opacity: 1; }
 
     .center-heading {
         text-align: center;
@@ -72,19 +218,17 @@
         margin-right: auto;
     }
 
-    .footer-nav {
-        text-align: center;
-        margin-bottom: 8px;
-    }
-
     .event-list li {
         padding-bottom: 8px;
         margin-top: 0px;
         margin-bottom: 10px;
     }
-    
+
+    .footer-nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer-nav li { font-size: 115%; }
+    .last-address-line { padding-bottom: 10px; }
 }
-
-
-
-

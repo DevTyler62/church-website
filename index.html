@@ -13,27 +13,30 @@
     <link rel="Stylesheet" href="./css/queries.css">
     <title>Providence Mennonite Church</title>
 </head>
-<body>
+<body tabindex="0">
     <header>
         <nav>
-            <div class="row">
-                <img src="css/images/peace.png" alt="dove" class="logo">
-                <ul class="main-nav">
-                    <li><a class="hvr-underline-from-center" href="#">History</a></li>
-                    <li><a class="hvr-underline-from-center" href="#">Events</a></li>
-                    <li><a class="hvr-underline-from-center" href="#">Bulletins</a></li>
-                    <!-- <li><a class="hvr-underline-from-center" href="#">Contact Us</a></li> -->
-                </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
+            <img src="css/images/peace.png" alt="dove" class="logo">
+            <ul class="main-nav">
+                <li><a class="hvr-underline-from-center" href="#history">History</a></li>
+                <li><a class="hvr-underline-from-center" href="#events">Times & Events</a></li>
+                <li><a class="hvr-underline-from-center" href="#bulletin">Bulletins</a></li>
+                <li><a class="hvr-underline-from-center" href="#contact">Contact Us</a></li>
+            </ul>
         </nav>
         <div class="center-heading">
             <h1>Welcome to <br>Providence Mennonite Church</h1>
-            <a class="btn btn-full hvr-grow" href="#">Join Us</a>
-            <a class="btn btn-ghost hvr-sweep-to-right" href="#">Our Histroy</a>
+            <a class="btn btn-full hvr-grow" href="#events">Join Us</a>
+            <a class="btn btn-ghost hvr-sweep-to-right" href="#history">Our History</a>
         </div>
     </header>
 
-    <section class="section-history">
+    <section class="section-history" id="history">
         <div class="row">
             <h2>Our History</h2>
         </div>
@@ -58,16 +61,18 @@
         </div>
     </section>
 
-    <section class="section-time-and-events">
+    <section class="section-time-and-events" id="events">
         <div class="row">
             <h2>Service Times and Upcoming Events</h2>
         </div>
         <div class="row">
                 <div class="col span-1-of-2">
-                    <!-- <img class="group" src="./css/images/group.png" alt="group"> -->
                     <h3>Join us every sunday</h3>
                     <p class="service">Sunday School: 9:00 a.m. - 10:00 a.m.</p>
                     <p class="service">Church Service: 10:15 a.m. - 11:15 a.m.</p>
+                    <p class="address">Our Address:</p>
+                    <p>109 South Mennonite Rd,</p>
+                    <p class="last-address-line">Collegeville, PA 19426</p>
                 </div>
             <div class="col span-1-of-2">
                 <h3>Upcoming Events</h3>
@@ -81,31 +86,33 @@
         </div>
     </section>
 
-    <section class="section-bulletin">
+    <section class="section-bulletin" id="bulletin">
         <div class="row">
             <h2>Past weeks Bulletin</h2>
         </div>
         <img src="./css/images/bulletin.jpg" alt="bulletin">
     </section>
 
-    <footer>
+    <section class="section-contact" id="contact">
         <div class="row">
-            <div class="col span-1-of-2">
-                <ul class="footer-nav">
-                    <li><a href="#">Join us</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Bulletins</a></li>
-                    <li><a href="#">Our histroy</a></li>
-                </ul>
-            </div>
-            <div class="contact-phone-number">
-                <p>Contact us &mdash; 610-489-8179</p>
-            </div>
+            <h2>Contact us</h2>
         </div>
+        <h3 class="contact">Give us a call</h3>
+        <p>610-489-8179</p>
+    </section>
+
+    <footer>
+            <ul class="footer-nav">
+                <li><a href="#events">Visit us</a></li>
+                <li><a href="#events">Times & Events</a></li>
+                <li><a href="#bulletin">Bulletins</a></li>
+                <li><a href="#history">Our history</a></li>
+            </ul>
         <div class="row">
-            <p class="copyright"> Copyright &copy; 2020. All rights reserved.</p>
+            <p class="copyright"> &copy; Providence Mennonite Church 2020. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

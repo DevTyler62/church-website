@@ -7,13 +7,21 @@ Basics
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     background-color: white;
     color: rgb(65, 65, 65);
     font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
 
 
 
@@ -50,18 +58,22 @@ header {
     width: auto;
     float: left;
     margin-top: 20px;
+    padding-left: 10px;
+}
+
+nav {
+    height: 10vh;
 }
 
 .main-nav {
-    float: right;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
     list-style: none;
-    margin-top: 55px;
     font-size: 90%;
-}
-
-.main-nav li {
-    display: inline-block;
-    margin-left: 40px;
 }
 
 .main-nav li a:link,
@@ -70,7 +82,6 @@ header {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    border-image: linear-gradient(to right, #00d2ff, #3a7bd5);
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
@@ -90,7 +101,9 @@ h1 {
     letter-spacing: 1px;
 }
 
-/*---------- Buttons -------------*/
+/*--------------------------
+BUTTONS
+---------------------------*/
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -167,7 +180,7 @@ SERVICE TIMES AND EVENTS
 ----------------------*/
 
 .section-time-and-events {
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(245, 245, 245);
 }
 
 h3 {
@@ -225,6 +238,11 @@ h3 {
     margin-right: 20px;
 }
 
+.address {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /*--------------------------
 BULLETIN SECTION
 ----------------------------*/
@@ -234,8 +252,28 @@ BULLETIN SECTION
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     border-radius: 20px;
     border: 2px solid black;
+}
+
+/*---------------------------------
+CONTACT SECTION
+----------------------------------*/
+.section-contact {
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 70px;
+}
+
+.contact {
+    text-align: center;
+    font-size: 150%;
+}
+
+.section-contact p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 140%;
 }
 
 /*-------------------------
@@ -243,24 +281,20 @@ FOOTER SECTION
 ---------------------------*/
 
 footer {
-    margin-top: 60px;
     background-color: rgb(88, 88, 88);
     padding: 50px;
     font-size: 80%;
 }
 
 .footer-nav {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
     list-style: none;
-    float: left;
-}
-
-.footer-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.footer-nav li:last-child {
-    margin-right: 0px;
+    font-size: 90%;
 }
 
 .footer-nav li a:link,
@@ -282,10 +316,15 @@ footer {
     margin-top: 20px;
 }
 
-.contact-phone-number {
-    color: rgb(163, 163, 163);
-    margin-top: 20px;
-    text-align: right;
+/*--------------------------------
+MOBILE NAV
+----------------------------------*/
+.mobile-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    /* display: none; */
 }
 
 
@@ -374,10 +413,10 @@ HOVER.CSS STYLES
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:active {
-    color: white;
+  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:active, .hvr-sweep-to-right:focus:before {
+    color: #ffffff;
   }
-  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:active:before {
+  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:active:before, .hvr-sweep-to-right:focus:after {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
