@@ -151,8 +151,8 @@
         width: 100%;
         flex-direction: column;
         justify-content: space-evenly;
-        clip-path: circle(100px at 90% -18%);
-        -webkit-clip-path: circle(100px at 90% -18%);
+        clip-path: circle(100px at 90% -25%);
+        -webkit-clip-path: circle(100px at 90% -25%);
         transition: all 1s ease-out;
         -webkit-transition: all 1s ease-out;
         -moz-transition: all 1s ease-out;
